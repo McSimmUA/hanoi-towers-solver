@@ -2,10 +2,9 @@ from functools import cache
 from typing import TypedDict, NamedTuple
 
 Disk = TypedDict('Disk', {'size': int, 'rode': int})
-# SolutionStep = TypedDict('SolutionStep', {'disk_size': int, 'from_rode': int, 'to_rode': int})
+
 SolutionStep = NamedTuple('SolutionStep', [('disk_size', int), ('from_rode', int), ('to_rode', int)])
 
-# OptimalResult = TypedDict('OptimalResult', {'min_steps': int, 'split': int})
 SplitResult = NamedTuple('SplitResult', [('min_steps', int), ('split', int)])
 
 
