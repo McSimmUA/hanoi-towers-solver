@@ -1,5 +1,5 @@
 from manim import *
-from hanoi_towers_solver import hanoi_get_solution, SolutionStep
+from hanoi_towers_solver import get_solution, SolutionStep
 
 RODS_COUNT = 7
 DISKS_COUNT = 14
@@ -15,7 +15,7 @@ RENDER_REVERSE = False
 SKIP_ANIMATIONS = False
 DRAFT = False
 
-solution: list[SolutionStep] = hanoi_get_solution(RODS_COUNT, DISKS_COUNT)
+solution: list[SolutionStep] = get_solution(RODS_COUNT, DISKS_COUNT)
 
 
 class HanoiTowersDemo2D(Scene):
